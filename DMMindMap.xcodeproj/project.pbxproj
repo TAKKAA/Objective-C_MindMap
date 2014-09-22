@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF5B03E519CEB217006F6B55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5B03E419CEB217006F6B55 /* Foundation.framework */; };
+		AF5B03E719CEB217006F6B55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5B03E619CEB217006F6B55 /* CoreGraphics.framework */; };
+		AF5B03E919CEB217006F6B55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5B03E819CEB217006F6B55 /* UIKit.framework */; };
+		AF5B03EF19CEB218006F6B55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF5B03ED19CEB218006F6B55 /* InfoPlist.strings */; };
+		AF5B03F119CEB218006F6B55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B03F019CEB218006F6B55 /* main.m */; };
+		AF5B03F519CEB218006F6B55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B03F419CEB218006F6B55 /* AppDelegate.m */; };
+		AF5B03F819CEB218006F6B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5B03F619CEB218006F6B55 /* Main.storyboard */; };
+		AF5B03FB19CEB218006F6B55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B03FA19CEB218006F6B55 /* ViewController.m */; };
+		AF5B03FD19CEB219006F6B55 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5B03FC19CEB219006F6B55 /* Images.xcassets */; };
+		AF5B040419CEB219006F6B55 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5B040319CEB219006F6B55 /* XCTest.framework */; };
+		AF5B040519CEB219006F6B55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5B03E419CEB217006F6B55 /* Foundation.framework */; };
+		AF5B040619CEB219006F6B55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5B03E819CEB217006F6B55 /* UIKit.framework */; };
+		AF5B040E19CEB219006F6B55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF5B040C19CEB219006F6B55 /* InfoPlist.strings */; };
+		AF5B041019CEB219006F6B55 /* DMMindMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B040F19CEB219006F6B55 /* DMMindMapTests.m */; };
+		AF5B042D19CEB331006F6B55 /* MindMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5B042C19CEB331006F6B55 /* MindMapView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF5B040719CEB219006F6B55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF5B03D919CEB217006F6B55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF5B03E019CEB217006F6B55;
+			remoteInfo = DMMindMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF5B03E119CEB217006F6B55 /* DMMindMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMMindMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5B03E419CEB217006F6B55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AF5B03E619CEB217006F6B55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AF5B03E819CEB217006F6B55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AF5B03EC19CEB218006F6B55 /* DMMindMap-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMMindMap-Info.plist"; sourceTree = "<group>"; };
+		AF5B03EE19CEB218006F6B55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF5B03F019CEB218006F6B55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AF5B03F219CEB218006F6B55 /* DMMindMap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMMindMap-Prefix.pch"; sourceTree = "<group>"; };
+		AF5B03F319CEB218006F6B55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF5B03F419CEB218006F6B55 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF5B03F719CEB218006F6B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF5B03F919CEB218006F6B55 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AF5B03FA19CEB218006F6B55 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AF5B03FC19CEB219006F6B55 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AF5B040219CEB219006F6B55 /* DMMindMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMMindMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5B040319CEB219006F6B55 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AF5B040B19CEB219006F6B55 /* DMMindMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMMindMapTests-Info.plist"; sourceTree = "<group>"; };
+		AF5B040D19CEB219006F6B55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AF5B040F19CEB219006F6B55 /* DMMindMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMMindMapTests.m; sourceTree = "<group>"; };
+		AF5B042B19CEB331006F6B55 /* MindMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MindMapView.h; path = MindMapView/MindMapView.h; sourceTree = "<group>"; };
+		AF5B042C19CEB331006F6B55 /* MindMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MindMapView.m; path = MindMapView/MindMapView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF5B03DE19CEB217006F6B55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5B03E719CEB217006F6B55 /* CoreGraphics.framework in Frameworks */,
+				AF5B03E919CEB217006F6B55 /* UIKit.framework in Frameworks */,
+				AF5B03E519CEB217006F6B55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5B03FF19CEB219006F6B55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5B040419CEB219006F6B55 /* XCTest.framework in Frameworks */,
+				AF5B040619CEB219006F6B55 /* UIKit.framework in Frameworks */,
+				AF5B040519CEB219006F6B55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF5B03D819CEB217006F6B55 = {
+			isa = PBXGroup;
+			children = (
+				AF5B03EA19CEB217006F6B55 /* DMMindMap */,
+				AF5B040919CEB219006F6B55 /* DMMindMapTests */,
+				AF5B03E319CEB217006F6B55 /* Frameworks */,
+				AF5B03E219CEB217006F6B55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF5B03E219CEB217006F6B55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF5B03E119CEB217006F6B55 /* DMMindMap.app */,
+				AF5B040219CEB219006F6B55 /* DMMindMapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF5B03E319CEB217006F6B55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF5B03E419CEB217006F6B55 /* Foundation.framework */,
+				AF5B03E619CEB217006F6B55 /* CoreGraphics.framework */,
+				AF5B03E819CEB217006F6B55 /* UIKit.framework */,
+				AF5B040319CEB219006F6B55 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF5B03EA19CEB217006F6B55 /* DMMindMap */ = {
+			isa = PBXGroup;
+			children = (
+				AF5B03F319CEB218006F6B55 /* AppDelegate.h */,
+				AF5B03F419CEB218006F6B55 /* AppDelegate.m */,
+				AF5B03F619CEB218006F6B55 /* Main.storyboard */,
+				AF5B03F919CEB218006F6B55 /* ViewController.h */,
+				AF5B03FA19CEB218006F6B55 /* ViewController.m */,
+				AF5B042A19CEB2F8006F6B55 /* MindMapView */,
+				AF5B03FC19CEB219006F6B55 /* Images.xcassets */,
+				AF5B03EB19CEB218006F6B55 /* Supporting Files */,
+			);
+			path = DMMindMap;
+			sourceTree = "<group>";
+		};
+		AF5B03EB19CEB218006F6B55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF5B03EC19CEB218006F6B55 /* DMMindMap-Info.plist */,
+				AF5B03ED19CEB218006F6B55 /* InfoPlist.strings */,
+				AF5B03F019CEB218006F6B55 /* main.m */,
+				AF5B03F219CEB218006F6B55 /* DMMindMap-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF5B040919CEB219006F6B55 /* DMMindMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF5B040F19CEB219006F6B55 /* DMMindMapTests.m */,
+				AF5B040A19CEB219006F6B55 /* Supporting Files */,
+			);
+			path = DMMindMapTests;
+			sourceTree = "<group>";
+		};
+		AF5B040A19CEB219006F6B55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AF5B040B19CEB219006F6B55 /* DMMindMapTests-Info.plist */,
+				AF5B040C19CEB219006F6B55 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF5B042A19CEB2F8006F6B55 /* MindMapView */ = {
+			isa = PBXGroup;
+			children = (
+				AF5B042B19CEB331006F6B55 /* MindMapView.h */,
+				AF5B042C19CEB331006F6B55 /* MindMapView.m */,
+			);
+			name = MindMapView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF5B03E019CEB217006F6B55 /* DMMindMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5B041319CEB219006F6B55 /* Build configuration list for PBXNativeTarget "DMMindMap" */;
+			buildPhases = (
+				AF5B03DD19CEB217006F6B55 /* Sources */,
+				AF5B03DE19CEB217006F6B55 /* Frameworks */,
+				AF5B03DF19CEB217006F6B55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMMindMap;
+			productName = DMMindMap;
+			productReference = AF5B03E119CEB217006F6B55 /* DMMindMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF5B040119CEB219006F6B55 /* DMMindMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5B041619CEB219006F6B55 /* Build configuration list for PBXNativeTarget "DMMindMapTests" */;
+			buildPhases = (
+				AF5B03FE19CEB219006F6B55 /* Sources */,
+				AF5B03FF19CEB219006F6B55 /* Frameworks */,
+				AF5B040019CEB219006F6B55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF5B040819CEB219006F6B55 /* PBXTargetDependency */,
+			);
+			name = DMMindMapTests;
+			productName = DMMindMapTests;
+			productReference = AF5B040219CEB219006F6B55 /* DMMindMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF5B03D919CEB217006F6B55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = jp.co.mappy;
+				TargetAttributes = {
+					AF5B040119CEB219006F6B55 = {
+						TestTargetID = AF5B03E019CEB217006F6B55;
+					};
+				};
+			};
+			buildConfigurationList = AF5B03DC19CEB217006F6B55 /* Build configuration list for PBXProject "DMMindMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF5B03D819CEB217006F6B55;
+			productRefGroup = AF5B03E219CEB217006F6B55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF5B03E019CEB217006F6B55 /* DMMindMap */,
+				AF5B040119CEB219006F6B55 /* DMMindMapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF5B03DF19CEB217006F6B55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5B03FD19CEB219006F6B55 /* Images.xcassets in Resources */,
+				AF5B03EF19CEB218006F6B55 /* InfoPlist.strings in Resources */,
+				AF5B03F819CEB218006F6B55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5B040019CEB219006F6B55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5B040E19CEB219006F6B55 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF5B03DD19CEB217006F6B55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5B03FB19CEB218006F6B55 /* ViewController.m in Sources */,
+				AF5B042D19CEB331006F6B55 /* MindMapView.m in Sources */,
+				AF5B03F519CEB218006F6B55 /* AppDelegate.m in Sources */,
+				AF5B03F119CEB218006F6B55 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5B03FE19CEB219006F6B55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5B041019CEB219006F6B55 /* DMMindMapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF5B040819CEB219006F6B55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF5B03E019CEB217006F6B55 /* DMMindMap */;
+			targetProxy = AF5B040719CEB219006F6B55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF5B03ED19CEB218006F6B55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF5B03EE19CEB218006F6B55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AF5B03F619CEB218006F6B55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF5B03F719CEB218006F6B55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF5B040C19CEB219006F6B55 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF5B040D19CEB219006F6B55 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF5B041119CEB219006F6B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AF5B041219CEB219006F6B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF5B041419CEB219006F6B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMMindMap/DMMindMap-Prefix.pch";
+				INFOPLIST_FILE = "DMMindMap/DMMindMap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AF5B041519CEB219006F6B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMMindMap/DMMindMap-Prefix.pch";
+				INFOPLIST_FILE = "DMMindMap/DMMindMap-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AF5B041719CEB219006F6B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DMMindMap.app/DMMindMap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMMindMap/DMMindMap-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DMMindMapTests/DMMindMapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AF5B041819CEB219006F6B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DMMindMap.app/DMMindMap";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMMindMap/DMMindMap-Prefix.pch";
+				INFOPLIST_FILE = "DMMindMapTests/DMMindMapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF5B03DC19CEB217006F6B55 /* Build configuration list for PBXProject "DMMindMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5B041119CEB219006F6B55 /* Debug */,
+				AF5B041219CEB219006F6B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF5B041319CEB219006F6B55 /* Build configuration list for PBXNativeTarget "DMMindMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5B041419CEB219006F6B55 /* Debug */,
+				AF5B041519CEB219006F6B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AF5B041619CEB219006F6B55 /* Build configuration list for PBXNativeTarget "DMMindMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5B041719CEB219006F6B55 /* Debug */,
+				AF5B041819CEB219006F6B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF5B03D919CEB217006F6B55 /* Project object */;
+}
