@@ -12,6 +12,8 @@
 		AF179F6419D34B86005B94C7 /* BackgroundScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF179F6319D34B86005B94C7 /* BackgroundScrollView.m */; };
 		AF179F6619D35174005B94C7 /* bgImage_cyan.png in Resources */ = {isa = PBXBuildFile; fileRef = AF179F6519D35174005B94C7 /* bgImage_cyan.png */; };
 		AF179F6819D35178005B94C7 /* bgImage_cyan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF179F6719D35178005B94C7 /* bgImage_cyan@2x.png */; };
+		AF179F6A19D359D1005B94C7 /* plus_button.png in Resources */ = {isa = PBXBuildFile; fileRef = AF179F6919D359D1005B94C7 /* plus_button.png */; };
+		AF179F6C19D359D4005B94C7 /* plus_button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF179F6B19D359D4005B94C7 /* plus_button@2x.png */; };
 		AF5B03E519CEB217006F6B55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5B03E419CEB217006F6B55 /* Foundation.framework */; };
 		AF5B03E719CEB217006F6B55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5B03E619CEB217006F6B55 /* CoreGraphics.framework */; };
 		AF5B03E919CEB217006F6B55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5B03E819CEB217006F6B55 /* UIKit.framework */; };
@@ -46,6 +48,8 @@
 		AF179F6319D34B86005B94C7 /* BackgroundScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundScrollView.m; sourceTree = "<group>"; };
 		AF179F6519D35174005B94C7 /* bgImage_cyan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgImage_cyan.png; sourceTree = "<group>"; };
 		AF179F6719D35178005B94C7 /* bgImage_cyan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgImage_cyan@2x.png"; sourceTree = "<group>"; };
+		AF179F6919D359D1005B94C7 /* plus_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_button.png; sourceTree = "<group>"; };
+		AF179F6B19D359D4005B94C7 /* plus_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus_button@2x.png"; sourceTree = "<group>"; };
 		AF5B03E119CEB217006F6B55 /* DMMindMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMMindMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5B03E419CEB217006F6B55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AF5B03E619CEB217006F6B55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,6 +104,8 @@
 				AF179F5D19D34648005B94C7 /* cloud@2x.png */,
 				AF179F6519D35174005B94C7 /* bgImage_cyan.png */,
 				AF179F6719D35178005B94C7 /* bgImage_cyan@2x.png */,
+				AF179F6919D359D1005B94C7 /* plus_button.png */,
+				AF179F6B19D359D4005B94C7 /* plus_button@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -275,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF5B03FD19CEB219006F6B55 /* Images.xcassets in Resources */,
+				AF179F6C19D359D4005B94C7 /* plus_button@2x.png in Resources */,
+				AF179F6A19D359D1005B94C7 /* plus_button.png in Resources */,
 				AF179F6819D35178005B94C7 /* bgImage_cyan@2x.png in Resources */,
 				AF5B03EF19CEB218006F6B55 /* InfoPlist.strings in Resources */,
 				AF5B03F819CEB218006F6B55 /* Main.storyboard in Resources */,

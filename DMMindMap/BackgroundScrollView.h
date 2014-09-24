@@ -10,6 +10,7 @@
 
 @interface BackgroundScrollView : UIScrollView
 
+@property(nonatomic)UIView *bufferView;
 @property(nonatomic)UIImageView *backgroundImageView;
 
 @end

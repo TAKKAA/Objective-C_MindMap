@@ -31,6 +31,7 @@
         
         [self setLongPressGesture];
         [self setPanGesture];
+        [self setPinchGesture];
         [self setBackgroundImageView];
         
         [self addTextField];
@@ -83,7 +84,7 @@
     UILongPressGestureRecognizer *longPressGesture =
     [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
     longPressGesture.delegate             = self;
-    longPressGesture.minimumPressDuration = 0.2;
+    longPressGesture.minimumPressDuration = 0.1;
     longPressGesture.allowableMovement    = 10.0;
     [self addGestureRecognizer:longPressGesture];
 }
@@ -93,6 +94,12 @@
     UIPanGestureRecognizer *panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
     panGesture.delegate = self;
     [self addGestureRecognizer:panGesture];
+}
+
+- (void)setPinchGesture
+{
+    UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(hundlePinchGesture:)];
+    [self addGestureRecognizer:pinch];
 }
 
 #pragma mark - Gesture Method
@@ -128,6 +135,27 @@
 }
 
 
+- (void)hundlePinchGesture:(UIPinchGestureRecognizer *)sender {
+     NSLog(@"Pinch");
+    if (sender.state == UIGestureRecognizerStateEnded
+        || sender.state == UIGestureRecognizerStateChanged) {
+        NSLog(@"gesture.scale = %f", sender.scale);
+        
+        CGFloat currentScale = self.frame.size.width / self.bounds.size.width;
+        CGFloat newScale = currentScale * sender.scale;
+        
+        if (newScale < 0.2) {
+            newScale = 0.2;
+        }
+        if (newScale > 2.0) {
+            newScale = 2.0;
+        }
+        
+        CGAffineTransform transform = CGAffineTransformMakeScale(newScale, newScale);
+        self.transform = transform;
+        sender.scale = 1;
+    }
+}
 
 #pragma mark - View State
 

@@ -25,22 +25,29 @@
         self.showsHorizontalScrollIndicator = NO;
         self.showsVerticalScrollIndicator = NO;
         self.scrollsToTop = YES;
+        self.minimumZoomScale = 0.2f;
+        self.maximumZoomScale = 1.0f;
         self.contentOffset = CGPointMake([[UIScreen mainScreen] bounds].size.width / 2, [[UIScreen mainScreen] bounds].size.height / 2);
-        NSLog(@"self.contentOffset = %@", NSStringFromCGPoint(self.contentOffset));
-        NSLog(@"init ScrollView");
         
-        
+        [self makeBufferView];
     }
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
+- (void)makeBufferView
 {
-    // Drawing code
+    _bufferView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.contentSize.width, self.contentSize.height)];
+    [self addSubview:_bufferView];
 }
-*/
+
+
+#pragma mark - Touch Event Override
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    if (!self.dragging) {
+        [self.nextResponder touchesBegan:touches withEvent:event];
+    }
+    [super touchesBegan:touches withEvent:event];
+}
 
 @end

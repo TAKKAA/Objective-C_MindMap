@@ -16,7 +16,9 @@
 
 @implementation ViewController
 {
+    NSMutableArray *mapArray;
     BackgroundScrollView *bgScrollView;
+    IBOutlet UIButton *addButton;
 }
 
 
@@ -24,6 +26,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    if (!mapArray) {
+        mapArray = [NSMutableArray new];
+    }
     
     [self makeBgScrollView];
     [self makeMindMap];
@@ -40,20 +46,46 @@
     bgScrollView = [[BackgroundScrollView alloc] init];
     bgScrollView.frame = self.view.bounds;
     bgScrollView.backgroundImageView.image = [UIImage imageNamed:@"bgImage_cyan.png"];
+    bgScrollView.delegate = self;
     [self.view addSubview:bgScrollView];
     
+    [self checkAddButtonHierarchy];
 }
+
 
 - (void)makeMindMap
 {
     MindMapView *mindMapView = [[MindMapView alloc] initWithFrame:CGRectMake(bgScrollView.contentSize.width / 2 - 50, bgScrollView.contentSize.height / 2 - 50, 100, 100)];
     mindMapView.backgroundImageView.image = [UIImage imageNamed:@"cloud.png"];
-    [bgScrollView addSubview:mindMapView];
+    mindMapView.tag = 1;
+    mapArray[0] = mindMapView;
+    [bgScrollView.bufferView addSubview:mindMapView];
+}
+
+- (void)checkAddButtonHierarchy
+{
+    [self.view bringSubviewToFront:addButton];
+}
+
+#pragma mark - Private Method
+
+- (IBAction)addMaps
+{
+    MindMapView *mindMapView = [[MindMapView alloc] initWithFrame:CGRectMake(bgScrollView.contentSize.width / 2 - 50, bgScrollView.contentSize.height / 2 - 50, 100, 100)];
+    mindMapView.backgroundImageView.image = [UIImage imageNamed:@"cloud.png"];
+    mindMapView.tag = mapArray.count + 1;
+    mapArray[mapArray.count] = mindMapView;
+    [bgScrollView.bufferView addSubview:mindMapView];
     
+    [self checkAddButtonHierarchy];
 }
 
 
-
+#pragma mark - ScrollView Delegate
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return bgScrollView.bufferView;
+}
 
 
 
