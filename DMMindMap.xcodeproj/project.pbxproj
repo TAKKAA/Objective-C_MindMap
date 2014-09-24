@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF179F5E19D34648005B94C7 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = AF179F5C19D34648005B94C7 /* cloud.png */; };
+		AF179F5F19D34648005B94C7 /* cloud@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF179F5D19D34648005B94C7 /* cloud@2x.png */; };
+		AF179F6419D34B86005B94C7 /* BackgroundScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF179F6319D34B86005B94C7 /* BackgroundScrollView.m */; };
+		AF179F6619D35174005B94C7 /* bgImage_cyan.png in Resources */ = {isa = PBXBuildFile; fileRef = AF179F6519D35174005B94C7 /* bgImage_cyan.png */; };
+		AF179F6819D35178005B94C7 /* bgImage_cyan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AF179F6719D35178005B94C7 /* bgImage_cyan@2x.png */; };
 		AF5B03E519CEB217006F6B55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5B03E419CEB217006F6B55 /* Foundation.framework */; };
 		AF5B03E719CEB217006F6B55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5B03E619CEB217006F6B55 /* CoreGraphics.framework */; };
 		AF5B03E919CEB217006F6B55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5B03E819CEB217006F6B55 /* UIKit.framework */; };
@@ -35,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF179F5C19D34648005B94C7 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		AF179F5D19D34648005B94C7 /* cloud@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud@2x.png"; sourceTree = "<group>"; };
+		AF179F6219D34B86005B94C7 /* BackgroundScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundScrollView.h; sourceTree = "<group>"; };
+		AF179F6319D34B86005B94C7 /* BackgroundScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundScrollView.m; sourceTree = "<group>"; };
+		AF179F6519D35174005B94C7 /* bgImage_cyan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgImage_cyan.png; sourceTree = "<group>"; };
+		AF179F6719D35178005B94C7 /* bgImage_cyan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bgImage_cyan@2x.png"; sourceTree = "<group>"; };
 		AF5B03E119CEB217006F6B55 /* DMMindMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMMindMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5B03E419CEB217006F6B55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AF5B03E619CEB217006F6B55 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +93,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF179F5B19D34648005B94C7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AF179F5C19D34648005B94C7 /* cloud.png */,
+				AF179F5D19D34648005B94C7 /* cloud@2x.png */,
+				AF179F6519D35174005B94C7 /* bgImage_cyan.png */,
+				AF179F6719D35178005B94C7 /* bgImage_cyan@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		AF179F6019D34B4D005B94C7 /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				AF179F6219D34B86005B94C7 /* BackgroundScrollView.h */,
+				AF179F6319D34B86005B94C7 /* BackgroundScrollView.m */,
+			);
+			name = ScrollView;
+			sourceTree = "<group>";
+		};
 		AF5B03D819CEB217006F6B55 = {
 			isa = PBXGroup;
 			children = (
@@ -115,11 +146,13 @@
 		AF5B03EA19CEB217006F6B55 /* DMMindMap */ = {
 			isa = PBXGroup;
 			children = (
+				AF179F5B19D34648005B94C7 /* Images */,
 				AF5B03F319CEB218006F6B55 /* AppDelegate.h */,
 				AF5B03F419CEB218006F6B55 /* AppDelegate.m */,
 				AF5B03F619CEB218006F6B55 /* Main.storyboard */,
 				AF5B03F919CEB218006F6B55 /* ViewController.h */,
 				AF5B03FA19CEB218006F6B55 /* ViewController.m */,
+				AF179F6019D34B4D005B94C7 /* ScrollView */,
 				AF5B042A19CEB2F8006F6B55 /* MindMapView */,
 				AF5B03FC19CEB219006F6B55 /* Images.xcassets */,
 				AF5B03EB19CEB218006F6B55 /* Supporting Files */,
@@ -242,8 +275,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF5B03FD19CEB219006F6B55 /* Images.xcassets in Resources */,
+				AF179F6819D35178005B94C7 /* bgImage_cyan@2x.png in Resources */,
 				AF5B03EF19CEB218006F6B55 /* InfoPlist.strings in Resources */,
 				AF5B03F819CEB218006F6B55 /* Main.storyboard in Resources */,
+				AF179F5E19D34648005B94C7 /* cloud.png in Resources */,
+				AF179F5F19D34648005B94C7 /* cloud@2x.png in Resources */,
+				AF179F6619D35174005B94C7 /* bgImage_cyan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +301,7 @@
 			files = (
 				AF5B03FB19CEB218006F6B55 /* ViewController.m in Sources */,
 				AF5B042D19CEB331006F6B55 /* MindMapView.m in Sources */,
+				AF179F6419D34B86005B94C7 /* BackgroundScrollView.m in Sources */,
 				AF5B03F519CEB218006F6B55 /* AppDelegate.m in Sources */,
 				AF5B03F119CEB218006F6B55 /* main.m in Sources */,
 			);
@@ -472,6 +510,7 @@
 				AF5B041519CEB219006F6B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF5B041619CEB219006F6B55 /* Build configuration list for PBXNativeTarget "DMMindMapTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +519,7 @@
 				AF5B041819CEB219006F6B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,9 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface MindMapView : UIView
+<UIGestureRecognizerDelegate, UITextFieldDelegate>
 
 
 
 - (void)setBackgroundImage:(UIImage *)backgroundImage;
+
+
+@property(nonatomic) UIImageView *backgroundImageView;
 
 @end
