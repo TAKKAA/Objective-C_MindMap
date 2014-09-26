@@ -41,6 +41,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Make View
+
 - (void)makeBgScrollView
 {
     bgScrollView = [[BackgroundScrollView alloc] init];
